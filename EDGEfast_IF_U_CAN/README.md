@@ -9,7 +9,7 @@
 <div align="center">
   <b>หน้าจอระหว่างการเล่น (Gameplay)</b><br>
   แสดงระบบการเล่นหลักที่ผู้เล่นต้องบังคับยานอวกาศหลบหลีกอุกกาบาต ในหน้าจอนี้จะมีการแสดงผลคะแนนที่เพิ่มขึ้นแบบทวีคูณ (Multiplier) และมีเอฟเฟกต์อนุภาค (Particle) พ่นไฟ<br><br>
-  <img src="./review/gameplay" width="200">
+  <img src="./review/gameplay.png" width="200">
 </div>
 
 <hr>
@@ -17,5 +17,5 @@
 <div align="center">
   <b>หน้าจอจบเกม (Game Over)</b><br>
   เมื่อยานอวกาศชนกับอุกกาบาต เกมจะจบลงและแสดงสรุปคะแนนที่ทำได้ (Final Score) ในรอบนั้นๆ เทียบกับสถิติคะแนนสูงสุด (Highest Score) หากสามารถทำลายสถิติได้ระบบจะบันทึกค่าใหม่ลงไฟล์โดยอัตโนมัติ<br><br>
-  <img src="./review/gameOver" width="200">
+  <img src="./review/gameOver.png" width="200">
 </div>
