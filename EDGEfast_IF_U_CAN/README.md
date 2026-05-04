@@ -2,7 +2,7 @@
   <b>หน้าจอเริ่มต้นเกม (Main Menu)</b><br>
   หน้านี้คือจุดเริ่มต้นต้อนรับผู้เล่นเข้าสู่เกม Space Defender มีคำอธิบายให้กดหน้าจอเพื่อเริ่มเกม พร้อมกับโชว์คะแนนสูงสุด (Highest Score) ที่เคยมีคนทำไว้จากการโหลดไฟล์สถิติ
 </p>
-<img src="/review/menu" width="200" align="center">
+<img src="./review/menu.png" width="200" align="center">
 
 <hr>
 
@@ -10,7 +10,7 @@
   <b>หน้าจอระหว่างการเล่น (Gameplay)</b><br>
   แสดงระบบการเล่นหลักที่ผู้เล่นต้องบังคับยานอวกาศหลบหลีกอุกกาบาต ในหน้าจอนี้จะมีการแสดงผลคะแนนที่เพิ่มขึ้นแบบทวีคูณ (Multiplier) และมีเอฟเฟกต์อนุภาค (Particle) พ่นไฟ
 </p>
-<img src="/review/gameplay" width="200" align="center">
+<img src="./review/gameplay" width="200" align="center">
 
 <hr>
 
@@ -18,4 +18,4 @@
   <b>หน้าจอจบเกม (Game Over)</b><br>
   เมื่อยานอวกาศชนกับอุกกาบาต เกมจะจบลงและแสดงสรุปคะแนนที่ทำได้ (Final Score) ในรอบนั้นๆ เทียบกับสถิติคะแนนสูงสุด (Highest Score) หากสามารถทำลายสถิติได้ระบบจะบันทึกค่าใหม่ลงไฟล์โดยอัตโนมัติ
 </p>
-<img src="/review/gameOver" width="200" align="center">
+<img src="./review/gameOver" width="200" align="center">
