@@ -5,7 +5,7 @@ PImage enermyImg;
 
 int gameState = 0;
 long score = 0; // เปลี่ยนจาก int เป็น long เพื่อแก้ปัญหา Integer Overflow เมื่อคะแนนทะลุ 2 พันล้าน
-long highestScore = 0; // ตัวแปรเก็บคะแนนสูงสุดตลอดกาล
+long highestScore = 0;
 
 String SECRET_SALT = "SpaceDefender2026!"; // รหัสลับสำหรับตรวจสอบไฟล์
 
@@ -36,7 +36,6 @@ int currentMultiplier = 1;
 
 void setup() {
     size(600, 800); // w:600 h:800
-    noCursor(); // <--- คำสั่งซ่อนเคอร์เซอร์เมาส์
     playerImg = loadImage("spaceship.png");
     enermyImg = loadImage("asteroid.png");
     
@@ -69,8 +68,10 @@ void draw() {
         drawStartScreen();
     } else if (gameState == 1) {
       playgame();
+      noCursor();
     } else if (gameState == 2) {
         drawGameOverScreen();
+        cursor();
     }
 }
 
@@ -234,7 +235,6 @@ void updateMultiplier() {
   }
 }
 
-// ฟังก์ชันสำหรับแปลงตัวเลขคะแนนให้เป็นตัวย่อ (K, M, B, T, ...)
 String formatScore(long v) {
     if (v >= 1000000000000000000L) return String.format("%.1f Qi", v / 1000000000000000000.0); // Quintillion
     if (v >= 1000000000000000L)    return String.format("%.1f Qa", v / 1000000000000000.0);    // Quadrillion
@@ -249,8 +249,8 @@ void mousePressed() {
     if (gameState == 0) {
         gameState = 1;
     } else if (gameState == 1) {
-        player.update();
-        player.display();
+        // player.update();
+        // player.display();
     } else if (gameState == 2) {
         resetGame();
         gameState = 1;
